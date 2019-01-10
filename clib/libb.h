@@ -1,5 +1,5 @@
-#ifndef _LIB_A_H_
-#define _LIB_A_H_
+#ifndef _LIB_B_H_
+#define _LIB_B_H_
 
 double libb_func();
 

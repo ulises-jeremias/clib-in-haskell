@@ -1,5 +1,3 @@
-// liba.c
-
 #include <stdio.h>
 #include "libb.h"
 

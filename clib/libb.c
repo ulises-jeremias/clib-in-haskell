@@ -1,5 +1,3 @@
-// libb.c
-
 #include <math.h>
 
 double libb_func() {
