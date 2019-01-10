@@ -1,0 +1,33 @@
+name:                haskell
+version:             0.1.0.0
+-- synopsis:
+-- description:
+homepage:            https://github.com/ulises-jeremias/clib-in-haskell
+license:             MIT
+license-file:        LICENSE
+author:              Ulises Jeremias Cornejo Fandos
+maintainer:          ulisescf.24@gmail.com
+copyright:           2018 Ulises Jeremias Cornejo Fandos
+category:            Web
+build-type:          Simple
+cabal-version:       >=1.10
+extra-source-files:  README.md
+
+executable haskell
+  hs-source-dirs:      src
+  --  ghc-options:         -L../clib -lab when lib a & b are merged into lib ab
+  -- extra-lib-dirs:      ../clib
+  -- extra-libraries:     ab
+  
+  -- ghc-options:         -L../clib -la b
+  extra-lib-dirs:      ../clib
+  extra-libraries:     a b
+  main-is:             Main.hs
+  default-language:    Haskell2010
+  build-depends:       base >= 4.7 && < 5
+
+library
+  hs-source-dirs:      src
+  exposed-modules:     LibAb
+  build-depends:       base >= 4.7 && < 5
+  default-language:    Haskell2010
