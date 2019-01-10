@@ -136,7 +136,7 @@ The answer is: 42.0
 
 #### Important about side effects
 
-Supose whe have `liba_func` like this:
+Supose we have `liba_func` like this:
 
 ```haskell
 liba_func :: Double -> Double
